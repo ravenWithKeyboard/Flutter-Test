@@ -32,8 +32,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  late String _user_name;
-  late String _photo_link;
+  late String _user_name = "1";
+  late String _photo_link = "1";
 
   Future<void> _getRandomPhoto() async {
     final GalleryFromUnsplech galleryfromunsplech = GalleryFromUnsplech.filled();
@@ -71,8 +71,8 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class Photo {
-  String user_name = "1";
-  String photo_link = "2";
+  String user_name;
+  String photo_link;
 
   Photo({required this.user_name, required this.photo_link});
 
